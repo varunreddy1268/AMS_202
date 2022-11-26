@@ -8,14 +8,14 @@ class CreateTable:
     def __init__(self):
         with connection.cursor() as cursor:
             query = '''
-            CREATE TABLE IF NOT EXISTS `User` (
-              `user_id` int(11) NOT NULL auto_increment,
-              `f_name` varchar(250) NOT NULL,
-              `l_name` varchar(250) NOT NULL,
-              `email` varchar(250)  NOT NULL,
-              `password`  varchar(100) NOT NULL,
-              `role`  varchar(100) NULL,
-              `airline`  varchar(100) NULL,
+            CREATE TABLE IF NOT EXISTS User (
+              user_id int(11) NOT NULL auto_increment,
+              f_name varchar(250) NOT NULL,
+              l_name varchar(250) NOT NULL,
+              email varchar(250)  NOT NULL,
+              password  varchar(100) NOT NULL,
+              role  varchar(100) NULL,
+              airline varchar(100) NULL,
                PRIMARY KEY  (`user_id`)
             );
             '''

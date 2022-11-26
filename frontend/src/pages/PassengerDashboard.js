@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 function PassengerDashboard() {
     const [data, setData] = useState([]);
@@ -31,18 +31,19 @@ function PassengerDashboard() {
                 </thead>
                 <tbody>
                 {
-                    data.map((flight)=> (
-                        {
-if(flight.type_of == "arrival"){
+//                     data.map((flight)=> (
+//                         {
+// // if(flight.type_of == "arrival"){
 
-                    <tr key={flight.id}>
-                    <td>{flight.product_name}</td>
-                    <td>{flight.product_category}</td>
-                    <td>{flight.unit_price}</td>
-                    <td/>
-                    </tr>
-                } }
-                        ))
+//                     <tr key={flight.id}>
+//                     <td>{flight.product_name}</td>
+//                     <td>{flight.product_category}</td>
+//                     <td>{flight.unit_price}</td>
+//                     <td/>
+//                     </tr>
+//                 }
+//</table>             }
+//                       ))
                 }
                 </tbody>
             </table>

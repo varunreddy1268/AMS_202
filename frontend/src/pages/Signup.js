@@ -114,31 +114,6 @@ const Signup = () => {
                                 required
                             />
                         </Grid>
-                        <Grid item xs={6}>
-                            <TextField
-                                value={SSN}
-                                onChange={(event) => {
-                                    setSSN(event.target.value);
-                                }}
-                                sx={{ ...hStyle }}
-                                placeholder="SSN"
-                                type="number"
-                                fullWidth
-                                required
-                            />
-                        </Grid>
-                        <Grid item xs={6}>
-                            <TextField
-                                value={address}
-                                onChange={(event) => {
-                                    setAddress(event.target.value);
-                                }}
-                                sx={{ ...hStyle }}
-                                placeholder="Address"
-                                fullWidth
-                                required
-                            />
-                        </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 value={email}

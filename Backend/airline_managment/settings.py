@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'airline_managment.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -85,6 +85,19 @@ DATABASES = {
         # 'PORT': '3306',
     }
 }
+# DATABASES = {
+# 'default': {
+#     'NAME': 'airport',
+#     'ENGINE': 'django.db.backends.postgresql',
+#     'USER': 'root',
+#     'PASSWORD': 'root1234',
+#     'HOST': 'localhost',
+#     'PORT': '5432',
+#     # 'OPTIONS': {
+#     #     'autocommit': True,
+#     #             },
+#             }
+#         }
 # AUTH_USER_MODEL="roles.User"
 
 
